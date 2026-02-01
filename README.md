@@ -42,3 +42,31 @@ Install dependencies:
 
 ```bash
 pip install requests urllib3
+
+
+## Installation
+
+```bash
+git clone https://github.com/<your-username>/wp-xmlrpc-ssrf-tool.git
+cd wp-xmlrpc-ssrf-tool
+chmod +x wp_xmlrpc_ssrf.py
+
+## Usage
+Basic XML-RPC check:
+python3 wp_xmlrpc_ssrf.py -t https://target.com
+
+Automated SSRF test:
+python3 wp_xmlrpc_ssrf.py -t https://target.com --auto
+
+Custom webhook:
+python3 wp_xmlrpc_ssrf.py -t https://target.com -w https://webhook.site/<uuid>
+
+Test a specific post:
+python3 wp_xmlrpc_ssrf.py -t https://target.com -p https://target.com/post/
+
+Blind internal port scan:
+python3 wp_xmlrpc_ssrf.py -t https://target.com --ports 80,443,3306
+
+Full test suite (verbose):
+python3 wp_xmlrpc_ssrf.py -t https://target.com --full -v
+
