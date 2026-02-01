@@ -21,6 +21,9 @@ Unauthorized use is illegal. The author assumes no responsibility for misuse.
 
 ---
 
+<img width="800" height="718" alt="image" src="https://github.com/user-attachments/assets/89c8ff11-db13-4063-92aa-756713f0344e" />
+
+
 ## Features
 
 - XML-RPC availability check  
